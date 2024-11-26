@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 1,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1392.0, 447.0, 1223.0, 928.0 ],
+		"rect" : [ -1231.0, 161.0, 1023.0, 790.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 20.0,
+					"id" : "obj-48",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 529.0, 6.5, 191.0, 29.0 ],
+					"text" : "SERVER PATCH"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -50,7 +63,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -489,7 +502,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -938,7 +951,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 862.0, 429.0, 250.0, 62.0 ],
+					"patching_rect" : [ 862.0, 429.0, 250.0, 60.0 ],
 					"text" : "The x-IMU3 must receive at least one command from the Max patch to send to the computer's IP address.  Clicking Connect will trigger a strobe command to achieve this."
 				}
 
@@ -962,7 +975,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 781.0, 90.5, 299.0, 117.0 ],
+					"patching_rect" : [ 781.0, 90.5, 299.0, 114.0 ],
 					"text" : "1. Install Sadam Library using the package manager\n\n2. Make sure the x-IMU3 and computer are on the same network\n\n3. Select the x-IMU3 from the Select Device umenu\n\n4. Click Connect"
 				}
 
@@ -975,7 +988,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1045.0, 258.0, 54.0, 23.0 ],
+					"patching_rect" : [ 1045.0, 258.0, 54.0, 22.0 ],
 					"text" : "v1.0.0"
 				}
 
@@ -1136,11 +1149,13 @@
 					"bgfillcolor_type" : "gradient",
 					"gradient" : 1,
 					"id" : "obj-9",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 535.0, 474.0, 50.0, 22.0 ]
+					"patching_rect" : [ 535.0, 474.0, 50.0, 35.0 ],
+					"text" : "port 9000"
 				}
 
 			}
@@ -1157,11 +1172,13 @@
 					"bgfillcolor_type" : "gradient",
 					"gradient" : 1,
 					"id" : "obj-8",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 423.0, 474.0, 98.0, 22.0 ]
+					"patching_rect" : [ 423.0, 474.0, 98.0, 35.0 ],
+					"text" : "address 192.169.1.1"
 				}
 
 			}
@@ -1177,7 +1194,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1445,7 +1462,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 154.0, 363.0, 50.0, 22.0 ]
+					"patching_rect" : [ 154.0, 363.0, 50.0, 22.0 ],
+					"text" : "8001"
 				}
 
 			}
@@ -1615,7 +1633,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 659.0, 219.0, 64.0, 27.0 ]
+					"patching_rect" : [ 659.0, 219.0, 64.0, 26.0 ],
+					"text" : "9000"
 				}
 
 			}
@@ -1627,7 +1646,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 571.0, 219.0, 64.0, 27.0 ]
+					"patching_rect" : [ 571.0, 219.0, 64.0, 26.0 ],
+					"text" : "8001"
 				}
 
 			}
@@ -1639,7 +1659,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 312.0, 219.0, 92.0, 27.0 ]
+					"patching_rect" : [ 312.0, 219.0, 92.0, 26.0 ],
+					"text" : "667D57D8"
 				}
 
 			}
@@ -1651,7 +1672,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 423.0, 219.0, 134.0, 27.0 ]
+					"patching_rect" : [ 423.0, 219.0, 134.0, 26.0 ],
+					"text" : "192.169.1.1"
 				}
 
 			}
@@ -1680,13 +1702,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1217.0, 387.0, 666.0, 733.0 ],
+						"rect" : [ -998.0, 263.0, 666.0, 733.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1714,7 +1736,97 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-47",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 508.0, 425.0, 55.0, 22.0 ],
+									"text" : "zl.slice 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-46",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 526.0, 572.0, 135.0, 22.0 ],
+									"text" : "udpsend localhost 6448"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-45",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 522.0, 531.0, 116.0, 22.0 ],
+									"text" : "prepend /wek/inputs"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-37",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 488.0, 236.0, 58.0, 22.0 ],
+									"text" : "loadbang"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-23",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 423.0, 309.0, 64.0, 22.0 ],
+									"text" : "script start"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 361.0, 381.0, 79.0, 22.0 ],
+									"text" : "prepend data"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 361.0, 417.0, 115.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"autostart" : 0,
+										"defer" : 0,
+										"watch" : 0
+									}
+,
+									"text" : "node.script server.js"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontface" : 1,
 									"id" : "obj-1",
@@ -1819,7 +1931,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 165.0, 82.0, 179.0, 144.0 ],
+									"patching_rect" : [ 165.0, 82.0, 179.0, 141.0 ],
 									"text" : "Break the incoming data into a sequence of bytes, and then group them into lists, outputting a new list every time we encounter the newline char (10). This ensures no newlines are present and each message is handled separately (as they can come in the same UDP packet)"
 								}
 
@@ -1971,11 +2083,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-18",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 43.0, 398.0, 170.5, 22.0 ]
+									"patching_rect" : [ 43.0, 398.0, 170.5, 35.0 ],
+									"text" : "M 1703994923 -0.8901 -0.3602 1.4383"
 								}
 
 							}
@@ -2050,6 +2164,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
 									"order" : 1,
 									"source" : [ "obj-18", 0 ]
@@ -2084,6 +2205,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-23", 0 ]
 								}
 
 							}
@@ -2159,6 +2287,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"source" : [ "obj-37", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
 									"source" : [ "obj-38", 0 ]
 								}
@@ -2188,6 +2323,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-44", 0 ],
+									"order" : 1,
+									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-47", 0 ],
+									"order" : 0,
 									"source" : [ "obj-43", 0 ]
 								}
 
@@ -2210,6 +2354,29 @@
 								"patchline" : 								{
 									"destination" : [ "obj-54", 0 ],
 									"source" : [ "obj-44", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"source" : [ "obj-45", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"order" : 1,
+									"source" : [ "obj-47", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-45", 0 ],
+									"order" : 0,
+									"source" : [ "obj-47", 1 ]
 								}
 
 							}
@@ -2636,13 +2803,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1185.0, 450.0, 982.0, 600.0 ],
+						"rect" : [ -628.0, 522.0, 982.0, 600.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2670,7 +2837,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-15",
@@ -3215,7 +3381,7 @@
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "gradient",
 					"id" : "obj-44",
-					"items" : "<empty>",
+					"items" : "667D57D8",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -3247,7 +3413,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3463,7 +3629,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 506.0, 233.0, 50.0, 22.0 ]
+									"patching_rect" : [ 506.0, 233.0, 50.0, 22.0 ],
+									"text" : "9000"
 								}
 
 							}
@@ -3474,7 +3641,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 421.0, 233.0, 50.0, 22.0 ]
+									"patching_rect" : [ 421.0, 233.0, 50.0, 22.0 ],
+									"text" : "8001"
 								}
 
 							}
@@ -3485,7 +3653,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 46.0, 468.0, 93.0, 22.0 ]
+									"patching_rect" : [ 46.0, 468.0, 93.0, 22.0 ],
+									"text" : "get 667D57D8"
 								}
 
 							}
@@ -3582,7 +3751,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 792.0, 548.0, 249.0, 22.0 ]
+									"patching_rect" : [ 792.0, 548.0, 249.0, 22.0 ],
+									"text" : "667D57D8 x-IMU3 192.169.1.1 8001 9000"
 								}
 
 							}
@@ -3649,7 +3819,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-6",
-									"items" : "<empty>",
+									"items" : "667D57D8",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3743,7 +3913,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 328.0, 233.0, 86.0, 22.0 ]
+									"patching_rect" : [ 328.0, 233.0, 86.0, 22.0 ],
+									"text" : "192.169.1.1"
 								}
 
 							}
@@ -3754,7 +3925,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 249.0, 233.0, 67.0, 22.0 ]
+									"patching_rect" : [ 249.0, 233.0, 67.0, 22.0 ],
+									"text" : "x-IMU3"
 								}
 
 							}
@@ -3765,7 +3937,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 166.0, 233.0, 72.0, 22.0 ]
+									"patching_rect" : [ 166.0, 233.0, 72.0, 22.0 ],
+									"text" : "667D57D8"
 								}
 
 							}
@@ -4825,16 +4998,23 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "sadam.udpReceiver.mxe64",
-				"type" : "mx64"
+				"name" : "sadam.udpReceiver.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "sadam.udpSender.mxe64",
-				"type" : "mx64"
+				"name" : "sadam.udpSender.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "server.js",
+				"bootpath" : "~/Documents/Max 8/x-IMU3-HfMT-Hamburg",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "x-io-logo.png",
-				"bootpath" : "C:/MyFiles/x-io/Products/x-IMU3/x-IMU3-Max-MSP-Example",
+				"bootpath" : "~/Documents/Max 8/x-IMU3-HfMT-Hamburg",
 				"patcherrelativepath" : ".",
 				"type" : "PNG",
 				"implicit" : 1
